@@ -1,0 +1,39 @@
+def find_prob(a,b):
+    if a==1:
+        prob_a = 0.2
+        if b==1:
+            prob_bga = 0.85
+        elif b==2:
+            prob_bga = 0.15
+        else:
+            print("Invalid choice")
+        prob_a_and_b = prob_a * prob_bga
+        print("probabillity of a given a:", prob_bga)
+        print("probabillity of both events occuring:",prob_a_and_b )  
+
+    elif a==2:
+        prob_8 = 0.8
+        if b==1:
+            prob_bga = 0.02
+        elif b==2:
+            prob_bga = 0.98
+        else:
+            print("Invalid choice")
+        prob_a_and_b = prob_a * prob_bga
+        print("probabillity of a given a:", prob_bga)
+        print("probabillity of both events occuring:",prob_a_and_b )  
+
+    else:
+        print("Invalid choice")
+print("Lets calculate probabillity. please enter choices for events")
+print("Person has step throat? \n 1. Yes \n 2. No")
+a = int(input("Enter your choice (1/2): "))
+print("Person has tested positive? \n 1. Yes \n 2. No")
+b = int(input("Enter your choice (1/2): "))
+print("Probabilities for event a and b:")
+find_prob(a,b)
+
+
+
+
+        
